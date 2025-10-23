@@ -9,7 +9,7 @@ export const createCard = ( turn, card ) => {
         if(turn === null) throw new Error('Turn is required.')
 
         const imgCard = document.createElement('img'); 
-        imgCard.src = `../../../assets/cartas/${card}.png`;
+        imgCard.src = `assets/cartas/${card}.png`;
         imgCard.classList.add('carta'); 
         divPlayersCards[turn].append(imgCard);
 }
